@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Code Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    
+    <!-- has the highscore button -->
+    <header> 
+        <button class="btnColor" class="btn btn-primary" type="view highscores">view highscores</button> 
+
+    <div class="time" > </div>
+    </header>
+<!-- the 1st dive (homepage) -->
+    <div id = "beg">
+        <h1>Coding quiz!</h1>
+        <p>this is the coding quiz.
+            <br>
+             You will have 75 seconds to complete the quiz.
+             <br>
+            For each question answered wrong 10 seconds will be subtracted from your current time!!
+        </p>   
+            <!-- Make this btn start quiz and timer   -->
+         <button onclick="startQuiz()" id="mainBtn" class="btnColor" class="btn btn-primary" type="start quiz">start quiz!</button> 
+    </div>
+
+<!-- second div that holds the questions -->
+    
+    <div id="question1" class="hide">  
+    <div>message</div>
+</div>
+
+    
+
+
+    
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>
